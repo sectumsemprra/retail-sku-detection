@@ -1,0 +1,36 @@
+
+=======================================================
+          FINAL PROJECT SUMMARY
+=======================================================
+
+── Model Performance ──────────────────────────────
+  Baseline Recall      : 67.6%
+  Our Recall           : 84.1%  (+16.5pp) ✅
+  Our Precision        : 85.9%
+  F1 Score             : 85.0%
+  mAP50                : 86.5%
+  Confidence Threshold : 0.66
+  TTA                  : Enabled
+
+── Detection Accuracy ─────────────────────────────
+  Ground Truth         : 145 products
+  Our Detections       : 144 products
+  Count Accuracy       : 99.3% ✅
+
+── Model Config ───────────────────────────────────
+  Architecture         : YOLOv11x
+  Epochs               : 200
+  Image size           : 640
+  Batch size           : 32
+  GPU                  : H100 80GB
+  Training time        : ~28 minutes
+
+── Share of Shelf ─────────────────────────────────
+  Test images          : 35
+  Total detections     : 144
+  Unique SKUs found    : 30 / 76
+  #1 SKU               : q214  — 13.19%
+  #2 SKU               : q280  — 13.19%
+  #3 SKU               : q31  — 9.03%
+
+=======================================================

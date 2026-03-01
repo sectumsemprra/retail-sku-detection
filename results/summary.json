@@ -1,0 +1,53 @@
+{
+    "model": {
+        "architecture": "YOLOv11x",
+        "epochs": 200,
+        "image_size": 640,
+        "batch_size": 32,
+        "gpu": "NVIDIA H100 80GB",
+        "training_time_hours": 0.46,
+        "checkpoint": "https://www.kaggle.com/models/sectumsemprra/retail-sku-yolo11x"
+    },
+    "inference_config": {
+        "confidence_threshold": 0.66,
+        "iou_threshold": 0.5,
+        "tta": true
+    },
+    "performance": {
+        "baseline_recall": 0.676,
+        "recall": 0.841,
+        "precision": 0.859,
+        "f1_score": 0.85,
+        "mAP50": 0.865,
+        "improvement_pp": 16.5
+    },
+    "count_accuracy": {
+        "ground_truth": 145,
+        "detections": 144,
+        "difference": -1,
+        "accuracy_pct": 99.3
+    },
+    "share_of_shelf": {
+        "test_images": 35,
+        "total_detections": 144,
+        "unique_skus_detected": 30,
+        "total_classes": 76,
+        "top_3": [
+            {
+                "rank": 1,
+                "sku": "q214",
+                "share_pct": 13.19
+            },
+            {
+                "rank": 2,
+                "sku": "q280",
+                "share_pct": 13.19
+            },
+            {
+                "rank": 3,
+                "sku": "q31",
+                "share_pct": 9.03
+            }
+        ]
+    }
+}
