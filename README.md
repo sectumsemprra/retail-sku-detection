@@ -33,7 +33,7 @@ This project addresses two tasks:
 
 - **Source:** Provided by Intelligent Machines Ltd. as part of the technical assessment
 - **License:** CC BY 4.0
-- **Images:** 999 source images → ~3,000 after augmentation
+- **Images:** 999 source images 
 - **Classes:** 76 SKU product classes (coded as q1, q4, q7 ... q299)
 - **Format:** YOLOv11 normalized bounding boxes
 - **Original split:** Train / Valid / Test
